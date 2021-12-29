@@ -4,7 +4,8 @@
 
 #As a developer, I want to create a AlarmClock class.
 
-#As a developer, I want the AlarmClock class to have class instance variables to keep track of the AlarmClock’s current time, whether the alarm is on or off, and the time the alarm is set to. (You can use arbitrary strings to represent the time, it does not need to accurately tell the current time or change over time).
+#As a developer, I want the AlarmClock class to have class instance variables to keep track of the AlarmClock’s current time, whether the alarm is on or off, 
+# and the time the alarm is set to. (You can use arbitrary strings to represent the time, it does not need to accurately tell the current time or change over time).
 
 #As a developer, I want the AlarmClock class to have a method to set (or change) the current time and print to the console the current time.
 
@@ -23,3 +24,12 @@
 #Files:
 
 #alarm_clock.py
+
+
+from alarm_clock import AlarmClock
+
+my_clock = AlarmClock()
+my_clock.print_current_time()
+my_clock.set_current_time()
+my_clock.set_alarm_time()
+my_clock.on_off_switch()

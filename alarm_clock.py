@@ -4,11 +4,14 @@ class AlarmClock:
         self.is_on = False
         self.alarm_time = ""
 
+    def print_current_time(self):
+        print(self.current_time)
+
     def set_current_time(self):
         self.current_time = input("Enter current time: ")
         print(self.current_time)
     
-    def toggle_alarm_on_or_off(self):
+    def on_off_switch(self):
         if self.is_on == False:
             self.is_on = True
         else:
